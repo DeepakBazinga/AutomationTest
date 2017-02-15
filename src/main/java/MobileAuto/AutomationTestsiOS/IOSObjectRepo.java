@@ -18,5 +18,6 @@ import io.appium.java_client.MobileElement;
 public class IOSObjectRepo extends CoreiOSMethods{
 
 	public By searchField=By.name("Search Products");
+	public By button_MenuLocation=By.name("menu-location");
 	public By ItemNo=By.xpath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]");
 }

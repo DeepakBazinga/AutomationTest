@@ -1,0 +1,3 @@
+INFO    2017-02-15 23:59:21,563 log - startApplication
+INFO    2017-02-15 23:59:21,588 log - startServeriOS : Appium Version-1.6.3 Device Name-Bazinga iOS Version-10.2 UDID-98ee41a0068ed6aa8356f158f6a8cdf9ba07682e Application Path-/Users/Bazinga/Documents/NIS.ipa
+INFO    2017-02-16 00:01:33,405 log - swipeToTopOfPage

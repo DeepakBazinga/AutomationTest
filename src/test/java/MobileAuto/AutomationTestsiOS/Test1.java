@@ -21,28 +21,26 @@ public class Test1 extends IOSObjectRepo{
 @BeforeClass
 public void setup() throws MalformedURLException, IOException, InterruptedException
 {
-	
 	startApplication();
 	Thread.sleep(10000);
 }
 @Test
 public void SearchItem() throws InterruptedException
 {
-	
-//	MobileElement searchField = (MobileElement) driver.findElement(By.name("Search Products"));
-//	searchField.tap(1, 3000);
-//	Thread.sleep(5000);
-//	searchField.sendKeys("315515");
-//	searchField.sendKeys(Keys.ENTER);
-//	Thread.sleep(15000);
-	
-	
 	tapiOS(searchField,1);
 	sendKeysiOS(searchField,"315515");
 	sendKeysiOS(searchField,"\n");
-	iosDriverTimeOut(5);
-	System.out.println(getTextOnLocator(ItemNo));
-	
+	waitforElement(ItemNo);
+	verifyElementContainsText(ItemNo, "315515");
+	swipeToBottomOfPage();
+	swipeToBottomOfPage();
+	swipeFromBottomToTopiPhone();
+	Thread.sleep(5000);
+	swipeFromTopToBottomiPhone();
+	Thread.sleep(5000);
+	swipeFromTopToBottomiPhone();
+	Thread.sleep(5000);
+	swipeFromBottomToTopiPhone();
 }
 @AfterTest
 public void tearDown()
